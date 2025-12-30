@@ -1,0 +1,80 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+
+# Environment variables
+.env
+.env.local
+
+# Vector Database
+chroma_db/
+*.db
+
+# Extracted data
+data/extracted/
+data/chunks/
+*.pkl
+*.pickle
+
+# PDFs (optional - uncomment if you don't want to track PDFs)
+# Books_pdf/*.pdf
+
+# Images
+*.png
+*.jpg
+*.jpeg
+*.gif
+data/images/
+
+# Logs
+*.log
+logs/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+frontend/.next/
+frontend/.turbo/
+frontend/out/
+
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Build
+dist/
+build/
+*.egg-info/
+GITHUB_DESCRIPTION.md
+HYBRID_RETRIEVAL_GUIDE.md
+DEPLOYMENT.md
+SETUP_GUIDE.md
+LINKEDIN_POST.md

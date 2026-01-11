@@ -4,9 +4,7 @@ An intelligent chatbot that answers questions about Artificial Intelligence usin
 
 ## 🎥 Demo
 
-<video width="900" controls>
-  <source src="img/demo.mp4" type="video/mp4">
-</video>
+https://github.com/user-attachments/assets/19066e91-4d10-41e8-8a56-ca29d1661e7e
 
 ## 📚 Features
 

@@ -1,0 +1,16 @@
+{
+  "collection_name": "ai_books_collection",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "embedding_dimension": 384,
+  "total_chunks": 10620,
+  "chroma_path": "c:\\Users\\jagth\\Downloads\\New folder\\ai-books-rag-chatbot\\Books_pdf\\chroma_db",
+  "created_at": "2026-01-10 17:38:44",
+  "books": [
+    "AI Engineering",
+    "Applied-Machine-Learning-and-AI-for-Engineers",
+    "Hands-On Large Language Models Language Understanding and Generation",
+    "Hands-On Machine Learning with Scikit-Learn and PyTorch",
+    "LLM Engineers Handbook",
+    "NLP with Transformer models"
+  ]
+}

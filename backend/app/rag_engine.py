@@ -26,13 +26,13 @@ class RAGEngine:
         """Initialize the RAG engine with all necessary components"""
         load_dotenv()
         
-        self.base_dir = Path(os.getenv("BASE_DIR", "d:/AI Book RAG"))
+        self.base_dir = Path(os.getenv("BASE_DIR", "c:\\Users\\jagth\\Downloads\\New folder\\ai-books-rag-chatbot\\Books_pdf"))
         self.chroma_dir = self.base_dir / "chroma_db"
         self.images_metadata_file = self.base_dir / "data" / "extracted" / "images_metadata.json"
         
         self.embedding_model_name = os.getenv("EMBEDDING_MODEL", "sentence-transformers/all-MiniLM-L6-v2")
         self.reranker_model_name = os.getenv("RERANKER_MODEL", "cross-encoder/ms-marco-MiniLM-L-6-v2")
-        self.groq_model = os.getenv("GROQ_MODEL", "mixtral-8x7b-32768")
+        self.groq_model = os.getenv("GROQ_MODEL", "openai/gpt-oss-20b")
         self.temperature = float(os.getenv("TEMPERATURE", "0.1"))
         self.max_tokens = int(os.getenv("MAX_TOKENS", "2048"))
         self.collection_name = "ai_books_collection"

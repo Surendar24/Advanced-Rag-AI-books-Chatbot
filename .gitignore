@@ -18,12 +18,11 @@ ENV/
 .env.local
 
 # Vector Database
-chroma_db/
+Books_pdf/chroma_db/
 *.db
 
 # Extracted data
-data/extracted/
-data/chunks/
+Books_pdf/data/
 *.pkl
 *.pickle
 
@@ -35,7 +34,7 @@ data/chunks/
 *.jpg
 *.jpeg
 *.gif
-data/images/
+Books_pdf/data/images/
 
 # Logs
 *.log

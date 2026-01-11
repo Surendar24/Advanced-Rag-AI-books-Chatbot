@@ -1,0 +1,132 @@
+{
+  "test_date": "2026-01-10 18:00:13",
+  "total_queries": 10,
+  "average_metrics": {
+    "total_time": 1.7786921739578248,
+    "llm_time": 1.70685555934906,
+    "sources": 5.0,
+    "images": 2.8
+  },
+  "results": [
+    {
+      "query": "What is transfer learning and how does it work in deep learning?",
+      "answer_preview": "Transfer learning is a technique in deep learning that enables pretrained models to be repurposed to solve domain-specific problems. It uses the intelligence already present in the bottleneck layers o...",
+      "num_sources": 5,
+      "num_images": 3,
+      "metrics": {
+        "total_time": 0.7985062599182129,
+        "llm_time": 0.7745544910430908,
+        "num_sources": 5,
+        "num_images": 3
+      }
+    },
+    {
+      "query": "Explain the transformer architecture and its key components",
+      "answer_preview": "The transformer architecture is a key component in the field of natural language processing (NLP) and has revolutionized the way we approach tasks such as machine translation, text classification, and...",
+      "num_sources": 5,
+      "num_images": 3,
+      "metrics": {
+        "total_time": 1.2292742729187012,
+        "llm_time": 1.098954200744629,
+        "num_sources": 5,
+        "num_images": 3
+      }
+    },
+    {
+      "query": "What are the best practices for fine-tuning large language models?",
+      "answer_preview": "Based on the provided context, the best practices for fine-tuning large language models include:\n\n1. **Techniques for reducing a model's memory footprint**: These techniques make fine-tuning more acce...",
+      "num_sources": 5,
+      "num_images": 3,
+      "metrics": {
+        "total_time": 1.0748858451843262,
+        "llm_time": 0.924523115158081,
+        "num_sources": 5,
+        "num_images": 3
+      }
+    },
+    {
+      "query": "How do I train a neural network with PyTorch?",
+      "answer_preview": "Based on the provided context, training a neural network with PyTorch involves several steps, which are outlined in the following sections.\n\n**Step 1: Building the Neural Network**\n\nTo train a neural ...",
+      "num_sources": 5,
+      "num_images": 1,
+      "metrics": {
+        "total_time": 1.1138420104980469,
+        "llm_time": 1.0138750076293945,
+        "num_sources": 5,
+        "num_images": 1
+      }
+    },
+    {
+      "query": "What is the attention mechanism in neural networks?",
+      "answer_preview": "The attention mechanism in neural networks is a mechanism that helps the model incorporate context as it's processing a specific token. It allows the model to \"attend\" to certain parts of sequences th...",
+      "num_sources": 5,
+      "num_images": 3,
+      "metrics": {
+        "total_time": 1.8976531028747559,
+        "llm_time": 1.8446383476257324,
+        "num_sources": 5,
+        "num_images": 3
+      }
+    },
+    {
+      "query": "What is gradient descent?",
+      "answer_preview": "Gradient descent is an iterative optimization method that seeks to minimize an objective (or error) function by repeatedly updating the model parameters in the direction of steepest descent. At each s...",
+      "num_sources": 5,
+      "num_images": 3,
+      "metrics": {
+        "total_time": 1.4205751419067383,
+        "llm_time": 1.2468936443328857,
+        "num_sources": 5,
+        "num_images": 3
+      }
+    },
+    {
+      "query": "Explain backpropagation in neural networks",
+      "answer_preview": "Backpropagation is the core algorithm that trains most modern neural networks. It consists of two complementary phases that are repeated until the network\u2019s loss is sufficiently small.\n\n1. **Forward p...",
+      "num_sources": 5,
+      "num_images": 3,
+      "metrics": {
+        "total_time": 1.3341996669769287,
+        "llm_time": 1.3127868175506592,
+        "num_sources": 5,
+        "num_images": 3
+      }
+    },
+    {
+      "query": "What are embeddings in NLP?",
+      "answer_preview": "Embeddings in natural language processing (NLP) are high\u2011dimensional numeric vectors that encode the meaning and relationships of words (or other linguistic units) in a continuous space. They are prod...",
+      "num_sources": 5,
+      "num_images": 3,
+      "metrics": {
+        "total_time": 1.2371361255645752,
+        "llm_time": 1.210754632949829,
+        "num_sources": 5,
+        "num_images": 3
+      }
+    },
+    {
+      "query": "How does BERT work?",
+      "answer_preview": "BERT (Bidirectional Encoder Representations from Transformers) is a transformer\u2011based encoder that learns contextual word representations by pre\u2011training on two self\u2011supervised tasks and then fine\u2011tun...",
+      "num_sources": 5,
+      "num_images": 3,
+      "metrics": {
+        "total_time": 1.3140528202056885,
+        "llm_time": 1.2932062149047852,
+        "num_sources": 5,
+        "num_images": 3
+      }
+    },
+    {
+      "query": "What is the difference between supervised and unsupervised learning?",
+      "answer_preview": "Supervised learning and unsupervised learning differ mainly in the presence of labels in the training data and in the goals they pursue.\n\n| Aspect | Supervised learning | Unsupervised learning |\n|----...",
+      "num_sources": 5,
+      "num_images": 3,
+      "metrics": {
+        "total_time": 6.366796493530273,
+        "llm_time": 6.348369121551514,
+        "num_sources": 5,
+        "num_images": 3
+      }
+    }
+  ]
+}

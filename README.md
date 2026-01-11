@@ -2,6 +2,12 @@
 
 An intelligent chatbot that answers questions about Artificial Intelligence using content from O'Reilly AI books, powered by Groq LLM and advanced RAG (Retrieval-Augmented Generation) with hybrid retrieval, cross-encoder reranking, and semantic chunking.
 
+## 🎥 Demo
+
+<video width="900" controls>
+  <source src="img/demo.mp4" type="video/mp4">
+</video>
+
 ## 📚 Features
 
 - **Hybrid Retrieval System**: Combines semantic search (embeddings) and lexical search (BM25) using Reciprocal Rank Fusion (RRF)
@@ -68,28 +74,33 @@ AI Book RAG/
 ### Backend Setup
 
 1. **Clone and navigate to the project**:
+
    ```bash
    cd "d:\AI Book RAG"
    ```
 
 2. **Create virtual environment**:
+
    ```bash
    python -m venv venv
    venv\Scripts\activate  # Windows
    ```
 
 3. **Install dependencies**:
+
    ```bash
    pip install -r requirements.txt
    ```
 
 4. **Configure environment variables**:
+
    ```bash
    copy .env.example .env
    # Edit .env and add your GROQ_API_KEY
    ```
 
 5. **Run the notebooks in order**:
+
    - `01_pdf_ingestion.ipynb` - Extract content from PDFs
    - `02_text_chunking.ipynb` or `02_text_chunking_semantic.ipynb` - Semantic chunking with overlap
    - `03_embedding_vectordb.ipynb` - Generate embeddings and populate vector DB
@@ -104,16 +115,19 @@ AI Book RAG/
 ### Frontend Setup
 
 1. **Navigate to frontend**:
+
    ```bash
    cd frontend
    ```
 
 2. **Install dependencies**:
+
    ```bash
    npm install
    ```
 
 3. **Start development server**:
+
    ```bash
    npm run dev
    ```
@@ -152,11 +166,13 @@ AI Book RAG/
 ### Retrieval Configuration
 
 **Retrieval Methods:**
+
 - `hybrid` (default): Combines semantic + lexical search with RRF
 - `semantic`: Pure vector similarity search
 - `lexical`: Pure BM25 keyword matching
 
 **Reranking:**
+
 - Enabled by default using cross-encoder model
 - Improves top-k result quality significantly
 - Model: `cross-encoder/ms-marco-MiniLM-L-6-v2`
@@ -166,6 +182,7 @@ AI Book RAG/
 Default: `sentence-transformers/all-MiniLM-L6-v2` (384 dimensions, fast)
 
 Alternatives:
+
 - `sentence-transformers/all-mpnet-base-v2` (768 dimensions, more accurate)
 - `BAAI/bge-small-en-v1.5` (384 dimensions, optimized for retrieval)
 
@@ -174,6 +191,7 @@ Alternatives:
 Default: `cross-encoder/ms-marco-MiniLM-L-6-v2` (fast, accurate)
 
 Alternatives:
+
 - `cross-encoder/ms-marco-MiniLM-L-12-v2` (better quality)
 - `cross-encoder/ms-marco-electra-base` (highest quality)
 
@@ -203,6 +221,7 @@ Alternatives:
 ## 🛠️ Tech Stack
 
 ### Backend
+
 - **Framework**: FastAPI
 - **LLM**: Groq (Llama 3.3 70B Versatile)
 - **Embeddings**: Sentence Transformers (all-MiniLM-L6-v2)
@@ -213,6 +232,7 @@ Alternatives:
 - **Text Processing**: LangChain for semantic chunking
 
 ### Frontend
+
 - **Framework**: React + TypeScript
 - **Build Tool**: Vite
 - **State Management**: TanStack Query
@@ -223,6 +243,7 @@ Alternatives:
 ## 📊 Advanced Features
 
 ### Retrieval & Search
+
 - ✅ **Hybrid Retrieval**: Combines semantic (embeddings) and lexical (BM25) search
 - ✅ **Reciprocal Rank Fusion (RRF)**: Merges ranked results from multiple retrieval methods
 - ✅ **Cross-Encoder Reranking**: Reranks top candidates for improved accuracy
@@ -230,17 +251,20 @@ Alternatives:
 - ✅ **Similarity Thresholding**: Filter out low-quality results
 
 ### Text Processing
+
 - ✅ **Semantic Chunking**: Intelligent text splitting with context preservation
 - ✅ **Chunk Overlap**: 200-character overlap to maintain continuity
 - ✅ **Chunk Consolidation**: Merges chunks from same page to reduce redundancy
 
 ### Answer Generation
+
 - ✅ **Multi-book reasoning**: Synthesizes information across multiple sources
 - ✅ **Numbered Citations**: Academic-style inline citations [1], [2], [3]
 - ✅ **Citation Deduplication**: Each unique source gets one reference number
 - ✅ **Intent Detection**: Handles greetings and technical queries appropriately
 
 ### Visual & UI
+
 - ✅ **Image Extraction**: Automatically extracts diagrams and figures from PDFs
 - ✅ **Image Relevance Scoring**: Confidence-based image matching to queries
 - ✅ **Source Snippet Viewing**: Expandable source text with metadata

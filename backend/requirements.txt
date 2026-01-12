@@ -6,7 +6,7 @@ Pillow==10.1.0
 
 # Text Processing & NLP
 langchain==0.1.0
-langchain-community==0.0.10
+langchain-community==0.3.27
 sentence-transformers==2.3.1
 tiktoken==0.5.2
 torch==2.0.1

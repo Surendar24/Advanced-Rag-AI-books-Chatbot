@@ -39,7 +39,7 @@ scikit-learn
 
 # Utilities
 tqdm==4.66.1
-requests==2.31.0
+requests==2.33.0
 
 # Development
 jupyter==1.0.0
